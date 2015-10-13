@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Identifikasi Photo Digital</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body>
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Identifikasi Photo Digital</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+ 		</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Identifikasi Photo Digital</h1>
+        <p>Menemukan beberapa informasi yang terdapat dalam berkas photo digital.</p>
+      </div>
+
+
+      <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+               <form class="well" action="upload.php" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="file">Pilih gambar yang akan diunggah</label>
+                    <input type="file" name="image">
+                    <p class="help-block">Hanya jenis berkas jpg dengan ukuran berkas dibawah 2MB yang diijinkan.</p>
+                  </div>
+                  <input type="submit" class="btn btn-lg btn-primary" name="image" value="Unggah">
+                </form>
+            </div>
+          </div>
+</body>
+</html>
